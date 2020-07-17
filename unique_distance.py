@@ -12,7 +12,7 @@ start_time = time.perf_counter()    # start the timer to check the run time
 grid_rows = 5
 grid_columns = 5
 num_choices = grid_rows * grid_columns
-choosing = 5
+choosing = 13
 
 #   generate a list of (X, Y) coordinate pairs
 coords = []
@@ -102,8 +102,8 @@ for solution in working_solutions:
     # convert the list of points into a full grid
     solution_blank_grid = create_blank_grid(grid_rows, grid_columns)
     for point in solution:
-        row = point[0]
-        column = int(point[1])
+        row = point[1]
+        column = int(point[0])
         solution_blank_grid[row][column] = 1
 
     # check whether the solution is permutation of a previously checked solution
