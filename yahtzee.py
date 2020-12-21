@@ -67,9 +67,11 @@ def roll(roll_num, keep, current_score):
 
 results = []
 
-games = 1
+games = 10000
 
 for game in range(games):
+
+    scratches = 0
 
     scores = {
         "nums": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
@@ -82,8 +84,6 @@ for game in range(games):
         "yahtzee": [0, 0],
         "chance": [0, 0]
         }
-
-    scratches = 0
 
     for i in range(13):
         # print("********** turn **********")
@@ -137,21 +137,25 @@ for game in range(games):
                 scores["chance"][0] = sum(turn)
                 # print('***** chance *****')
             else:
-                if scratches > 3:
-                    pass
-                else:
-                    if scores[scratch_order[scratches]][1] == 0:
+                scratched = False
+                while scratched == False:
+                    # print(scratch_order[scratches])
+                    if scores[scratch_order[scratches]][0] == 0 and scores[scratch_order[scratches]][1] == 0:
                         scores[scratch_order[scratches]][1] = 1
+                        if scratches < 3:
+                            scratches += 1
+                        scratched = True
+                    elif scratches < 3:
                         scratches += 1
                     else:
-                        scratches += 1
+                        scratched = True
 
     game_total = 0
     top = sum([x[0] for x in scores['nums']])
     if top >= 63:
         scores["upper_bonus"][0] = 35
 
-    print(scores)
+    # print(scores)
 
     score_raw = scores.copy()
 
@@ -168,14 +172,14 @@ for game in range(games):
     if game % 1000 == 0:
         print(game)
 
-# total_scores = [game[0] for game in results]
-#
-# max_game = results[total_scores.index(max(total_scores))]
-# min_game = results[total_scores.index(min(total_scores))]
-# mean = statistics.mean(total_scores)
-# std_dev = statistics.stdev(total_scores)
-#
-# print('mean: ', mean)
-# print('std_dev', std_dev)
-# print('max: ', max_game)
-# print('min: ', min_game)
+total_scores = [game[0] for game in results]
+
+max_game = results[total_scores.index(max(total_scores))]
+min_game = results[total_scores.index(min(total_scores))]
+mean = statistics.mean(total_scores)
+std_dev = statistics.stdev(total_scores)
+
+print('mean: ', mean)
+print('std_dev', std_dev)
+print('max: ', max_game)
+print('min: ', min_game)
