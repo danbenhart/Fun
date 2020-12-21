@@ -1,0 +1,168 @@
+2020-11-17 11:09:11,500 :: __init__ :: line: 623 :: DEBUG :: Using proactor: IocpProactor
+2020-11-17 11:09:13,347 :: connection_made :: line: 940 :: DEBUG :: <UciProtocol (pid=23380)>: Connection made
+2020-11-17 11:09:13,348 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=23380)>: << uci
+2020-11-17 11:09:13,528 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> info string CDrill 1800 32bit Build 4
+2020-11-17 11:09:13,529 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> id name CDrill 1800
+2020-11-17 11:09:13,529 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> id author Ferdinand Mosca
+2020-11-17 11:09:13,530 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name Ponder type check default false
+2020-11-17 11:09:13,530 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name OwnBook type check default false
+2020-11-17 11:09:13,531 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name MultiPV type spin default 1 min 1 max 300
+2020-11-17 11:09:13,531 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name MaterialWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,531 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name PawnStructureWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,531 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name PassedPawnWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name MobilityWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name ThreatWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name KingAttackWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name KingShelterWeight type spin default 100 min 0 max 1000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> option name RepeatScore type spin default -15 min -32000 max 32000
+2020-11-17 11:09:13,532 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=23380)>: >> uciok
+2020-11-17 11:09:13,536 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=23380)>: << quit
+2020-11-17 11:09:13,540 :: process_exited :: line: 959 :: DEBUG :: <UciProtocol (pid=23380)>: Process exited
+2020-11-17 11:09:13,540 :: connection_lost :: line: 946 :: DEBUG :: <UciProtocol (pid=23380)>: Connection lost (exit code: 0, error: None)
+2020-11-17 11:09:13,543 :: __init__ :: line: 623 :: DEBUG :: Using proactor: IocpProactor
+2020-11-17 11:09:14,085 :: connection_made :: line: 940 :: DEBUG :: <UciProtocol (pid=15088)>: Connection made
+2020-11-17 11:09:14,086 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=15088)>: << uci
+2020-11-17 11:09:14,182 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> info string Deuterium v2019.1.36.50 32bit
+2020-11-17 11:09:14,267 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> id name Deuterium v2019.1.36.50
+2020-11-17 11:09:14,267 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> id author Ferdinand Mosca
+2020-11-17 11:09:14,268 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name Hash type spin default 128 min 8 max 2048
+2020-11-17 11:09:14,268 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name EvalHash type spin default 32 min 4 max 32
+2020-11-17 11:09:14,268 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PawnHash type spin default 4 min 2 max 8
+2020-11-17 11:09:14,269 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name Log type check default false
+2020-11-17 11:09:14,269 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name Ponder type check default true
+2020-11-17 11:09:14,270 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name OwnBook type check default false
+2020-11-17 11:09:14,270 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name BookFilename type string default deuterium.bin
+2020-11-17 11:09:14,270 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name BookMoveSelect type combo default Random var BestWeight var BestScore var Random
+2020-11-17 11:09:14,270 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PawnValueOp type spin default 95 min 70 max 110
+2020-11-17 11:09:14,271 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PawnValueEn type spin default 125 min 90 max 150
+2020-11-17 11:09:14,271 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name KnightValueOp type spin default 325 min 250 max 350
+2020-11-17 11:09:14,272 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name KnightValueEn type spin default 315 min 250 max 350
+2020-11-17 11:09:14,272 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name BishopValueOp type spin default 328 min 250 max 350
+2020-11-17 11:09:14,272 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name BishopValueEn type spin default 327 min 250 max 350
+2020-11-17 11:09:14,272 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name RookValueOp type spin default 504 min 450 max 550
+2020-11-17 11:09:14,272 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name RookValueEn type spin default 498 min 450 max 550
+2020-11-17 11:09:14,273 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name QueenValueOp type spin default 996 min 900 max 1200
+2020-11-17 11:09:14,273 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name QueenValueEn type spin default 999 min 900 max 1200
+2020-11-17 11:09:14,274 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name KingShelterWeight type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,274 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PawnStormWeight type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,275 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name KingAttackWeight type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,275 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name MobilityWeight type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,275 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PassedPawnWeightOp type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,275 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name PassedPawnWeightEn type spin default 100 min 25 max 100000
+2020-11-17 11:09:14,276 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name WeakSquareWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,276 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name RookInOpenFileOp type spin default 32 min 4 max 100
+2020-11-17 11:09:14,276 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name RookInOpenFileEn type spin default 16 min 2 max 100
+2020-11-17 11:09:14,277 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name NullMove type check default true
+2020-11-17 11:09:14,277 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name RepetitionScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,277 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name InsufficientMaterialScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,277 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name FiftyMoveScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,278 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name StaleMateScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,278 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name TimeBufferMilliSec type spin default 60 min 0 max 1000
+2020-11-17 11:09:14,278 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name MultiPV type spin default 1 min 1 max 300
+2020-11-17 11:09:14,278 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name UCI_AnalyseMode type check default false
+2020-11-17 11:09:14,278 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> option name ClearHash type button
+2020-11-17 11:09:14,279 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=15088)>: >> uciok
+2020-11-17 11:09:14,281 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=15088)>: << quit
+2020-11-17 11:09:14,315 :: process_exited :: line: 959 :: DEBUG :: <UciProtocol (pid=15088)>: Process exited
+2020-11-17 11:09:14,315 :: connection_lost :: line: 946 :: DEBUG :: <UciProtocol (pid=15088)>: Connection lost (exit code: 0, error: None)
+2020-11-17 11:09:14,317 :: __init__ :: line: 623 :: DEBUG :: Using proactor: IocpProactor
+2020-11-17 11:09:14,631 :: connection_made :: line: 940 :: DEBUG :: <UciProtocol (pid=5168)>: Connection made
+2020-11-17 11:09:14,631 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=5168)>: << uci
+2020-11-17 11:09:14,746 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> info string Deuterium v2019.2.37.73 64bit POPCNT
+2020-11-17 11:09:14,835 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> id name Deuterium v2019.2.37.73
+2020-11-17 11:09:14,835 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> id author Ferdinand Mosca
+2020-11-17 11:09:14,835 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name Hash type spin default 128 min 8 max 2048
+2020-11-17 11:09:14,836 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name EvalHash type spin default 32 min 4 max 32
+2020-11-17 11:09:14,837 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PawnHash type spin default 4 min 2 max 8
+2020-11-17 11:09:14,837 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name UCI_LimitStrength type check default false
+2020-11-17 11:09:14,837 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name UCI_Elo type spin default 2800 min 1000 max 2800
+2020-11-17 11:09:14,837 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name Log type check default false
+2020-11-17 11:09:14,837 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name Ponder type check default true
+2020-11-17 11:09:14,838 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name OwnBook type check default false
+2020-11-17 11:09:14,838 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name BookFilename type string default deuterium.bin
+2020-11-17 11:09:14,839 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name BookMoveSelect type combo default BestWeight var BestWeight var BestScore var Random
+2020-11-17 11:09:14,839 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PawnValueOp type spin default 94 min 70 max 110
+2020-11-17 11:09:14,839 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PawnValueEn type spin default 92 min 90 max 150
+2020-11-17 11:09:14,839 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name KnightValueOp type spin default 325 min 200 max 500
+2020-11-17 11:09:14,840 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name KnightValueEn type spin default 315 min 200 max 500
+2020-11-17 11:09:14,840 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name BishopValueOp type spin default 350 min 200 max 500
+2020-11-17 11:09:14,840 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name BishopValueEn type spin default 350 min 200 max 500
+2020-11-17 11:09:14,841 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name RookValueOp type spin default 493 min 300 max 800
+2020-11-17 11:09:14,841 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name RookValueEn type spin default 525 min 300 max 800
+2020-11-17 11:09:14,841 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name QueenValueOp type spin default 985 min 500 max 1500
+2020-11-17 11:09:14,842 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name QueenValueEn type spin default 1022 min 500 max 1500
+2020-11-17 11:09:14,842 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name KingShelterWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,842 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PawnStormWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,843 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name KingAttackWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,843 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name MobilityWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,843 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PassedPawnWeightOp type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,844 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name PassedPawnWeightEn type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,844 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name WeakSquareWeight type spin default 100 min 0 max 100000
+2020-11-17 11:09:14,844 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name RookInOpenFileOp type spin default 32 min 0 max 100
+2020-11-17 11:09:14,845 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name RookInOpenFileEn type spin default 16 min 0 max 100
+2020-11-17 11:09:14,845 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name NullMove type check default true
+2020-11-17 11:09:14,845 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name RepetitionScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,845 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name InsufficientMaterialScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,846 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name FiftyMoveScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,846 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name StaleMateScore type spin default 0 min -29800 max 29800
+2020-11-17 11:09:14,846 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name TimeBufferMilliSec type spin default 60 min 0 max 1000
+2020-11-17 11:09:14,846 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name MultiPV type spin default 1 min 1 max 300
+2020-11-17 11:09:14,847 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name UCI_AnalyseMode type check default false
+2020-11-17 11:09:14,847 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> option name ClearHash type button
+2020-11-17 11:09:14,847 :: _line_received :: line: 985 :: DEBUG :: <UciProtocol (pid=5168)>: >> uciok
+2020-11-17 11:09:14,851 :: send_line :: line: 962 :: DEBUG :: <UciProtocol (pid=5168)>: << quit
+2020-11-17 11:09:14,883 :: process_exited :: line: 959 :: DEBUG :: <UciProtocol (pid=5168)>: Process exited
+2020-11-17 11:09:14,884 :: connection_lost :: line: 946 :: DEBUG :: <UciProtocol (pid=5168)>: Connection lost (exit code: 0, error: None)
+2020-11-17 11:09:14,887 :: __init__ :: line: 623 :: DEBUG :: Using proactor: IocpProactor
+2020-11-17 11:09:14,892 :: check_engine_config_file :: line: 1181 :: ERROR :: Failed to start engine Deuterium_v2020.1.38.5_linux_64bit!
+Traceback (most recent call last):
+  File "C:/Users/benhartd/PycharmProjects/Fun-master/Python-Easy-Chess-GUI-master/python_easy_chess_gui.py", line 1174, in check_engine_config_file
+    engine = chess.engine.SimpleEngine.popen_uci(
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 2735, in popen_uci
+    return cls.popen(UciProtocol, command, timeout=timeout, debug=debug, setpgrp=setpgrp, **popen_args)
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 2727, in popen
+    return run_in_background(background, name=f"{cls.__name__} (command={command!r})", debug=debug)
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 200, in run_in_background
+    return future.result()
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 194, in background
+    asyncio.run(coroutine(future))
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 2715, in background
+    transport, protocol = await Protocol.popen(command, setpgrp=setpgrp, **popen_args)
+  File "C:\Users\benhartd\PycharmProjects\Fun-master\venv\lib\site-packages\chess\engine.py", line 1178, in popen
+    return await asyncio.get_running_loop().subprocess_exec(cls, *command, **popen_args)  # type: ignore
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 1630, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\windows_events.py", line 385, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\windows_events.py", line 881, in _start
+    self._proc = windows_utils.Popen(
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\asyncio\windows_utils.py", line 153, in __init__
+    super().__init__(args, stdin=stdin_rfd, stdout=stdout_wfd,
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\benhartd\AppData\Local\Programs\Python\Python38-32\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 193] %1 is not a valid Win32 application
+2020-11-17 11:09:41,218 :: play_game :: line: 2143 :: INFO :: Book move is e7e5.
+2020-11-17 11:09:46,499 :: play_game :: line: 2340 :: INFO :: Saving game automatically
+2020-11-17 11:29:13,957 :: main_loop :: line: 3255 :: INFO :: Backup current engine list and file.
+2020-11-17 11:29:13,957 :: main_loop :: line: 3256 :: INFO :: Current engine file: CDrill_1800_32bit.exe
+2020-11-17 11:29:17,426 :: main_loop :: line: 3277 :: INFO :: User cancels engine selection. We restore the current engine data.
+2020-11-17 11:29:17,426 :: main_loop :: line: 3280 :: INFO :: Current engine data were restored.
+2020-11-17 11:29:17,426 :: main_loop :: line: 3281 :: INFO :: current engine file: CDrill_1800_32bit.exe
+2020-11-17 11:29:38,349 :: set_depth_limit :: line: 1618 :: ERROR :: Failed to get user depth.
+Traceback (most recent call last):
+  File "C:/Users/benhartd/PycharmProjects/Fun-master/Python-Easy-Chess-GUI-master/python_easy_chess_gui.py", line 1615, in set_depth_limit
+    user_depth = int(user_depth)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2020-11-17 16:20:55,558 :: main_loop :: line: 2599 :: INFO :: Quit app from main loop, X is pressed.

@@ -1,8 +1,9 @@
+#! python3
+
 import numpy as np
 import pygame
 import sys
 import math
-import pygame.gfxdraw
 
 BLUE = (0, 0, 255)
 BLACK = (0, 0, 0)
@@ -11,18 +12,6 @@ YELLOW = (255, 255, 0)
 
 ROW_COUNT = 8
 COLUMN_COUNT = 8
-
-to_win = 4
-
-#
-# test_game_state = [[0, 0, 0, 0, 1, 0, 0, 0],
-#                    [0, 0, 0, 0, 2, 0, 0, 0],
-#                    [0, 0, 0, 0, 3, 0, 0, 0],
-#                    [8, 7, 6, 5, 4, 3, 2, 1],
-#                    [0, 0, 0, 0, 5, 0, 0, 0],
-#                    [0, 0, 0, 0, 6, 0, 0, 0],
-#                    [0, 0, 0, 0, 7, 0, 0, 0],
-#                    [0, 0, 0, 0, 8, 0, 0, 0]]
 
 
 def is_valid_location(row, column, game_state):
@@ -134,8 +123,10 @@ while not game_over:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
-
+        # screen_copy = screen.copy()
+        draw_board(board)
         if event.type == pygame.MOUSEMOTION:
+            screen_temp = screen.copy()
             pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARESIZE))
 
             pos_x = event.pos[0]
@@ -145,8 +136,10 @@ while not game_over:
 
             else:
                 pygame.draw.circle(screen, YELLOW, (pos_x, pos_y), RADIUS)
-        draw_board(board)
+            # screen.blit(screen_temp, (0, 0))
+        # draw_board(board)
         pygame.display.update()
+        # screen = screen_copy
 
         if event.type == pygame.MOUSEBUTTONDOWN:
             pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARESIZE))
