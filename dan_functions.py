@@ -1,4 +1,30 @@
 import numpy as np
+import pickle
+
+
+def files(path):
+    for file in os.listdir(path):
+        if os.path.isfile(os.path.join(path, file)):
+            yield file
+
+
+def save_obj(obj, output_dir, name):
+    """
+    :param obj: the object which will be pickled
+    :param output_dir: the desired output directory
+    :param name: the desired pickle file name
+    :return:
+    """
+    output_filename = output_dir.joinpath(name + '.pkl')
+    with open(output_filename, 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
+
+def load_obj(name):
+    filename = name + '.pkl'
+    with open(filename, 'rb') as f:
+        obj = pickle.load(f)
+        return obj, type(obj)
 
 
 def factors(x):
